@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Kitchen Display tab icon: a ranked list (three rows, the top one highlighted). -->
+  <rect width="32" height="32" rx="7" fill="#061925"/>
+  <rect x="7" y="8" width="18" height="4" rx="2" fill="#02AACE"/>
+  <rect x="7" y="14" width="14" height="4" rx="2" fill="#ffffff" opacity="0.85"/>
+  <rect x="7" y="20" width="10" height="4" rx="2" fill="#ffffff" opacity="0.6"/>
+</svg>

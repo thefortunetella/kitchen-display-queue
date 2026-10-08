@@ -1,0 +1,27 @@
+{
+  "name": "kitchen-display-queue",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "dev": "concurrently --names api,web --prefix-colors blue,magenta \"npm run dev -w api\" \"npm run dev -w web\"",
+    "db:setup": "npm run db:setup -w api",
+    "test": "npm test -w api && npm test -w web",
+    "lint": "oxlint api/src api/tests api/scripts e2e playwright.config.ts && oxlint -c web/.oxlintrc.json web/src",
+    "build": "npm run build -w web",
+    "pretest:e2e": "playwright install chromium && npm run db:setup",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "concurrently": "^10.0.5"
+  },
+  "overrides": {
+    "shell-quote": "^1.11.0"
+  }
+}

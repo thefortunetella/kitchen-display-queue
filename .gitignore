@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Logs and local env files
+*.log
+.env
+*.local
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Playwright
+test-results/
+playwright-report/
+
+# Local working notes, not part of the deliverable
+docs/
+CLAUDE.md
